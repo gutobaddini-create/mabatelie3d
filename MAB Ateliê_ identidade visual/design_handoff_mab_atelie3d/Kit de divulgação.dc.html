@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+  a { color: var(--color-accent-700); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--color-accent-800); }
+</style>
+</helmet>
+
+<div style="padding: 52px 32px 120px; display: flex; flex-direction: column; gap: 48px">
+
+  <header style="display: flex; flex-direction: column; gap: 14px; max-width: 62ch">
+    <span class="tag tag-accent" style="align-self: flex-start">Web e redes sociais</span>
+    <h1 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(34px, 5.5vw, 54px); line-height: 1.04; margin: 0">Kit de divulgação</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--color-neutral-700)">Cada peça abaixo está no tamanho real que a rede pede. Clique com o botão direito na imagem e salve, ou me peça para exportar em PNG. Troque <strong style="font-weight: 600; color: var(--color-text)">@mabatelie3d</strong> pelo usuário que você registrar.</p>
+  </header>
+
+  <section style="display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 24px; margin: 0">Foto de perfil</h2>
+      <span style="font-size: 13px; color: var(--color-neutral-700)">1000 × 1000 px — Instagram, WhatsApp Business, Mercado Livre, Elo7</span>
+    </div>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
+      <div id="perfil-terracota" style="width: 260px; height: 260px; border-radius: 999px; background: var(--color-accent-700); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; box-shadow: var(--shadow-md)">
+        <span style="font-family: var(--font-heading); font-size: 76px; line-height: 0.9; color: var(--color-neutral-100)">MAB</span>
+        <span style="font-weight: 600; font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-accent-200)">atelie<span style="color: var(--color-neutral-100)">3D</span></span>
+      </div>
+      <div id="perfil-creme" style="width: 260px; height: 260px; border-radius: 999px; background: var(--color-neutral-100); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; box-shadow: var(--shadow-sm)">
+        <span style="font-family: var(--font-heading); font-size: 76px; line-height: 0.9; color: var(--color-text)">MAB</span>
+        <span style="font-weight: 600; font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-neutral-700)">atelie<span style="color: var(--color-accent-700)">3D</span></span>
+      </div>
+      <p style="flex: 1 1 260px; min-width: 0; margin: 0; font-size: 14px; line-height: 1.65; color: var(--color-neutral-700)">Em avatar redondo pequeno o subtítulo desaparece. Se a rede mostrar o perfil com menos de 60 px, use a versão só com "MAB".</p>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 24px; margin: 0">Posts</h2>
+      <span style="font-size: 13px; color: var(--color-neutral-700)">1080 × 1080 px — três modelos que se alternam no feed</span>
+    </div>
+    <div style="display: flex; gap: 24px; flex-wrap: wrap">
+
+      <div id="post-marca" style="width: 340px; height: 340px; border-radius: var(--radius-lg); background: var(--color-accent-700); padding: 38px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-md)">
+        <span style="font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-200)">peças para casa</span>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-family: var(--font-heading); font-size: 66px; line-height: 0.9; color: var(--color-neutral-100)">MAB</span>
+          <span style="font-weight: 600; font-size: 15px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--color-accent-200)">atelie<span style="color: var(--color-neutral-100)">3D</span></span>
+        </div>
+        <span style="font-size: 14px; font-weight: 600; color: var(--color-neutral-100)">@mabatelie3d</span>
+      </div>
+
+      <div id="post-produto" style="width: 340px; height: 340px; border-radius: var(--radius-lg); background: var(--color-neutral-100); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm)">
+        <div class="washed" style="flex: 1 1 auto; min-height: 0; overflow: hidden">
+          <img src="uploads/referencias-1789557949377-m5yu.webp" alt="Saboneteira impressa em 3D" style="display: block; width: 100%; height: 100%; object-fit: cover">
+        </div>
+        <div style="padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+            <span style="font-family: var(--font-heading); font-size: 20px; line-height: 1.1">Saboneteira Folhas</span>
+            <span style="font-size: 13px; color: var(--color-neutral-700)">sage e terracota</span>
+          </div>
+          <span style="font-family: var(--font-heading); font-size: 20px; color: var(--color-accent-700)">MAB</span>
+        </div>
+      </div>
+
+      <div id="post-processo" style="width: 340px; height: 340px; border-radius: var(--radius-lg); background: var(--color-accent-2-700); padding: 38px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-md)">
+        <span style="font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-2-200)">como é feito</span>
+        <p style="margin: 0; font-family: var(--font-heading); font-size: 27px; line-height: 1.18; color: var(--color-neutral-100)">Impressão, acabamento e embalagem, uma peça por vez.</p>
+        <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-200)">@mabatelie3d</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 24px; margin: 0">Story</h2>
+      <span style="font-size: 13px; color: var(--color-neutral-700)">1080 × 1920 px — deixe os 250 px de cima e de baixo livres, é onde a interface do app entra</span>
+    </div>
+    <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start">
+      <div id="story-encomenda" style="width: 260px; height: 462px; border-radius: var(--radius-lg); background: var(--color-neutral-100); padding: 58px 32px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-md)">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-family: var(--font-heading); font-size: 34px; line-height: 0.9">MAB</span>
+          <span style="font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-neutral-700)">atelie<span style="color: var(--color-accent-700)">3D</span></span>
+        </div>
+        <p style="margin: 0; font-family: var(--font-heading); font-size: 30px; line-height: 1.15">Encomendas pelo direct.</p>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <div style="padding: 13px 22px; border-radius: 999px; background: var(--color-accent-700); color: var(--color-neutral-100); font-size: 14px; font-weight: 600; text-align: center">Chamar no direct</div>
+          <span style="font-size: 12px; text-align: center; color: var(--color-neutral-700)">@mabatelie3d</span>
+        </div>
+      </div>
+      <p style="flex: 1 1 260px; min-width: 0; margin: 0; font-size: 14px; line-height: 1.65; color: var(--color-neutral-700)">O botão é decorativo: por cima dele você cola o sticker de link ou de caixa de perguntas do próprio Instagram, que é o que gera resposta.</p>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 16px">
+    <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 24px; margin: 0">Textos prontos</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+      <div class="card" style="display: flex; flex-direction: column; gap: 10px">
+        <span class="card-kicker">bio do instagram</span>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6">Peças impressas em 3D para casa.<br>Saboneteiras, porta-objetos e lembranças.<br>Projeto e produção: Guto Baddini.<br>Encomendas no direct.</p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 10px">
+        <span class="card-kicker">legenda de lançamento</span>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6">Saboneteira Folhas, em sage e terracota. Impressa em PLA, camada de 0,2 mm, com a base gravada a laser. Feita por encomenda, na cor que você escolher.</p>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; gap: 10px">
+        <span class="card-kicker">resposta de preço</span>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6">Oi! A Saboneteira Folhas sai por R$ __, com frete à parte. Faço nas cores sage, terracota, creme e amarelo. Prazo de produção: 3 dias.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+</body>
+</html>

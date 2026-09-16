@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAB Atelie3D — peças impressas em 3D para a sua casa</title>
+<meta name="description" content="Saboneteiras, porta-objetos e lembranças impressas em 3D, desenhadas e produzidas no nosso ateliê. A loja abre em breve.">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+  a { color: var(--color-accent-700); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--color-accent-800); }
+</style>
+</helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#8c491a"/><text x="50" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#f9f4ed">MAB</text></svg></template>
+
+<div style="min-height: 100%; display: flex; flex-direction: column">
+
+  <header style="padding: clamp(24px, 5vw, 44px) clamp(20px, 6vw, 72px); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+    <div style="display: flex; flex-direction: column; gap: 2px">
+      <span style="font-family: var(--font-heading); font-size: clamp(26px, 4vw, 34px); line-height: 0.95">MAB</span>
+      <span style="font-weight: 600; font-size: clamp(9px, 1.4vw, 11px); letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-neutral-700)">atelie<span style="color: var(--color-accent-700)">3D</span></span>
+    </div>
+    <span class="tag tag-accent">A loja abre em breve</span>
+  </header>
+
+  <main style="flex: 1 1 auto; padding: clamp(20px, 5vw, 56px) clamp(20px, 6vw, 72px) clamp(48px, 8vw, 96px); display: flex; flex-direction: column">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 64px); align-items: center; max-width: 1180px">
+
+      <div style="display: flex; flex-direction: column; gap: clamp(20px, 3vw, 30px); min-width: 0">
+        <h1 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(38px, 7vw, 72px); line-height: 1.02; margin: 0; text-wrap: pretty">Peças impressas em 3D para a sua casa</h1>
+        <p style="margin: 0; font-size: clamp(17px, 2.2vw, 21px); line-height: 1.6; color: var(--color-neutral-800); max-width: 44ch">Saboneteiras, porta-objetos e lembranças, desenhadas e produzidas no nosso ateliê — uma peça por vez, na cor que você escolher.</p>
+        <p style="margin: 0; font-size: clamp(15px, 1.9vw, 17px); line-height: 1.6; color: var(--color-neutral-700); max-width: 44ch">Estamos terminando a primeira linha de peças e fotografando cada uma delas. Em breve esta página vira a loja. Até lá, as encomendas são pelo e-mail ou pelo Instagram.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; padding-top: 4px">
+          <a class="btn btn-primary" href="mailto:mab.atelie@mabatelie3d.com.br" style="text-decoration: none">Fazer uma encomenda</a>
+          <a class="btn btn-secondary" href="https://instagram.com/mabatelie3d" style="text-decoration: none">Ver no Instagram</a>
+        </div>
+      </div>
+
+      <div class="washed" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); min-width: 0">
+        <img src="uploads/referencias-1789557949377-m5yu.webp" alt="Saboneteira em 3D com desenho de folhas, em sage e terracota" style="display: block; width: 100%; height: auto">
+      </div>
+    </div>
+
+    <div style="margin-top: clamp(56px, 9vw, 104px); max-width: 1180px; display: flex; flex-direction: column; gap: clamp(20px, 3vw, 30px)">
+      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(24px, 3.4vw, 34px); line-height: 1.1; margin: 0">Nossa linha de trabalho</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+        <div class="card" style="display: flex; flex-direction: column; gap: 10px">
+          <span class="card-kicker">para a casa</span>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6">Saboneteiras, porta-objetos, bandejas e apoios. Peças de uso diário, com desenho vazado e acabamento lixado.</p>
+        </div>
+        <div class="card" style="display: flex; flex-direction: column; gap: 10px">
+          <span class="card-kicker">para presente</span>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6">Lembranças de batizado, casamento e aniversário, incluindo peças de devoção. Feitas em quantidade, com a mesma cor do convite.</p>
+        </div>
+        <div class="card" style="display: flex; flex-direction: column; gap: 10px">
+          <span class="card-kicker">sob encomenda</span>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6">Cor, tamanho e nome gravado a laser na base. Você escolhe a combinação e a peça é impressa depois do pedido.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: var(--color-accent-700); padding: clamp(32px, 6vw, 56px) clamp(20px, 6vw, 72px); display: flex; flex-wrap: wrap; gap: clamp(24px, 4vw, 48px); justify-content: space-between; align-items: flex-end">
+    <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0">
+      <span style="font-family: var(--font-heading); font-size: clamp(30px, 5vw, 44px); line-height: 0.95; color: var(--color-neutral-100)">MAB</span>
+      <span style="font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-accent-200)">atelie<span style="color: var(--color-neutral-100)">3D</span></span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+      <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-200)">contato</span>
+      <a href="mailto:mab.atelie@mabatelie3d.com.br" style="font-size: clamp(15px, 2vw, 17px); font-weight: 600; color: var(--color-neutral-100); text-decoration: underline; text-underline-offset: 4px; word-break: break-word">mab.atelie@mabatelie3d.com.br</a>
+      <a href="https://instagram.com/mabatelie3d" style="font-size: 15px; color: var(--color-accent-200); text-decoration: underline; text-underline-offset: 4px">@mabatelie3d</a>
+    </div>
+    <span style="font-size: 13px; color: var(--color-accent-200)">mabatelie3d.com.br · peças desenhadas e produzidas no nosso ateliê</span>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>

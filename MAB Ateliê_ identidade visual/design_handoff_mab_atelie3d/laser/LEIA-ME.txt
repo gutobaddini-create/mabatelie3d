@@ -1,0 +1,45 @@
+MAB Atelie3D — vetores para gravacao a laser
+============================================
+
+Arquivos (todos em tamanho real, medidas em mm):
+
+  mab-lockup-30mm.svg          marca completa, para pecas grandes (a partir de 25 mm de area livre)
+  mab-lockup-20mm.svg          marca completa reduzida
+  mab-solo-12mm.svg            so as tres letras, preenchidas
+  mab-solo-12mm-contorno.svg   so as tres letras, em contorno (traco 0,3 mm)
+  mab-selo-redondo-20mm.svg    selo circular para base de peca
+
+ATENCAO: a fonte NAO esta embutida nos arquivos
+-----------------------------------------------
+As letras sao texto, nao desenho. Em qualquer programa sem a fonte Caprasimo
+instalada — incluindo o navegador e o Inkscape — elas aparecem em outra fonte.
+Isso e normal e se resolve no passo obrigatorio abaixo. Nao grave nada antes.
+
+PASSO OBRIGATORIO antes de gravar
+---------------------------------
+1. Instale as fontes, gratuitas:
+   Caprasimo  fonts.google.com/specimen/Caprasimo   (o "MAB")
+   Figtree    fonts.google.com/specimen/Figtree     (o "ATELIE3D")
+2. Abra o SVG no Inkscape (gratuito, inkscape.org). Confira se as letras
+   apareceram com a fonte certa: o "MAB" e grosso e arredondado.
+3. Selecione tudo (Ctrl+A) e use Caminho > Objeto para caminho (Ctrl+Shift+C).
+   Isso transforma as letras em desenho e a fonte deixa de importar.
+4. Salve como "Inkscape SVG" ou exporte em DXF, conforme o software da sua
+   maquina pede. Guarde esse arquivo convertido: e o que vai para o laser
+   de agora em diante.
+
+Regra do "3D"
+-------------
+Na gravacao existe uma cor so. Para o "3D" continuar se destacando, grave-o
+com mais passadas (ou mais potencia) que o resto do nome. Se a maquina nao
+permitir, use os arquivos "solo" e dispense o subtitulo.
+
+Respiro
+-------
+Deixe em volta da marca um espaco livre igual a altura da letra M.
+Distancia minima da borda da peca: 6 mm.
+
+Teste
+-----
+Cada cor de filamento queima diferente. Antes da tiragem, grave uma vez em
+uma peca refugada da mesma cor e ajuste a potencia.
