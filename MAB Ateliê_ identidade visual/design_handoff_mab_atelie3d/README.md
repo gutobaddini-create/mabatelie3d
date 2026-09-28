@@ -2,11 +2,22 @@
 
 ## Overview
 
-MAB Atelie3D é uma marca de artigos para casa impressos em 3D (saboneteiras,
-porta-objetos, bandejas) e lembranças/peças devocionais, produzida por um
-ateliê individual no Brasil. Este pacote contém a identidade visual completa,
-os arquivos de produção (gravação a laser, etiquetas impressas), o kit de
-redes sociais e a landing page "em breve" que hoje é o site.
+MAB Atelie3D é uma marca de peças e acessórios de bicicleta impressos em 3D
+(suportes, adaptadores, protetores, porta-bidom, guarda-lama e acessórios sob
+medida), produzida por um ateliê individual no Brasil. Este pacote contém a
+identidade visual completa, os arquivos de produção (gravação a laser,
+etiquetas impressas), o kit de redes sociais e a landing page "em breve" que
+hoje é o site.
+
+> **Reposicionamento (2026-09):** a marca era focada em artigos para casa e
+> lembranças/peças devocionais. O foco agora é só bicicleta — peças
+> funcionais (encaixe sob medida) e acessórios. O tom de ateliê artesanal, a
+> identidade visual (cores, tipografia, direção visual abaixo) e o site em
+> `site/index.html` já foram atualizados. Os demais documentos de design
+> deste pacote (`Etiquetas A4.dc.html`, `Instagram — configuração
+> inicial.dc.html`, `Kit de divulgação.dc.html`, `Site — em breve.dc.html`)
+> ainda descrevem a linha antiga e precisam de uma passada de conteúdo —
+> não foram reescritos neste turno.
 
 O objetivo do handoff é permitir que um desenvolvedor: (a) reimplemente a
 landing page no ambiente do projeto real, e (b) evolua essa página para uma
@@ -137,9 +148,9 @@ com header, main flexível e footer colado embaixo.
 - **Hero** — grid `repeat(auto-fit, minmax(300px,1fr))`, `gap: clamp(32px,5vw,64px)`,
   `align-items:center`, `max-width:1180px`.
   - Coluna de texto (flex column, `gap: clamp(20px,3vw,30px)`):
-    - h1: "Peças impressas em 3D para a sua casa"
-    - lead (`max-width:44ch`): "Saboneteiras, porta-objetos e lembranças, desenhadas e produzidas no nosso ateliê — uma peça por vez, na cor que você escolher."
-    - sub (cor `neutral-700`): "Estamos terminando a primeira linha de peças e fotografando cada uma delas. Em breve esta página vira a loja. Até lá, as encomendas são pelo e-mail ou pelo Instagram."
+    - h1: "Peças e acessórios de bicicleta, impressos sob medida"
+    - lead (`max-width:44ch`): "Suportes, adaptadores e acessórios desenhados e produzidos no nosso ateliê — sob medida pro seu quadro, guidão ou componente, na cor que você escolher."
+    - sub (cor `neutral-700`): "Estamos terminando a primeira linha de peças e testando encaixe em bikes de verdade. Em breve esta página vira a loja. Até lá, as encomendas são pelo e-mail ou pelo Instagram."
     - Dois botões, flex `gap:12px`, `flex-wrap:wrap`:
       - primário: "Fazer uma encomenda" → `mailto:mab.atelie@mabatelie3d.com.br`.
         `padding:14px 26px`, `border-radius:999px`, fundo `accent-700`, texto `neutral-100`, 15px/600. Hover: fundo `#643312`.
@@ -156,9 +167,9 @@ com header, main flexível e footer colado embaixo.
   fundo `neutral-200`, `border-radius:16px`, `padding:26px`, flex column `gap:10px`.
   Cada um com um kicker (11px/700, `letter-spacing:.14em`, uppercase, cor `accent-700`)
   e um parágrafo 16px/1.6:
-  - **para a casa** — "Saboneteiras, porta-objetos, bandejas e apoios. Peças de uso diário, com desenho vazado e acabamento lixado."
-  - **para presente** — "Lembranças de batizado, casamento e aniversário, incluindo peças de devoção. Feitas em quantidade, com a mesma cor do convite."
-  - **sob encomenda** — "Cor, tamanho e nome gravado a laser na base. Você escolhe a combinação e a peça é impressa depois do pedido."
+  - **peças funcionais** — "Suportes, adaptadores e protetores com encaixe testado pro seu quadro, guidão ou componente. Mais precisão que peça genérica de loja."
+  - **acessórios** — "Porta-bidom, guarda-lama, enfeites de guidão e pequenos acabamentos. Praticidade do dia a dia com a identidade da sua bike."
+  - **sob encomenda** — "Cor, encaixe e medida exata da sua bike. Você manda a referência e a peça é impressa depois do pedido."
 - **Footer** — fundo `accent-700`, `padding: clamp(32px,6vw,56px) clamp(20px,6vw,72px)`,
   flex wrap, `justify-content:space-between`, `align-items:flex-end`,
   `gap: clamp(24px,4vw,48px)`. Três blocos: marca em creme; contato
