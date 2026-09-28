@@ -208,7 +208,7 @@ página fixa** — é um documento de impressão, não uma tela.
 
 ### 3. Vetores de gravação a laser (`laser/*.svg`)
 
-Cinco SVGs em tamanho real, `width`/`height` em mm, `viewBox` em unidades de mm,
+Seis SVGs em tamanho real, `width`/`height` em mm, `viewBox` em unidades de mm,
 fill `#000000`:
 
 | Arquivo | Conteúdo |
@@ -218,6 +218,7 @@ fill `#000000`:
 | `mab-solo-12mm.svg` | 12 × 4.4 mm — só "MAB" preenchido |
 | `mab-solo-12mm-contorno.svg` | idem, `fill:none; stroke-width:0.3` |
 | `mab-selo-redondo-20mm.svg` | 20 × 20 mm — círculo `stroke-width:.6` + MAB + ATELIE3D |
+| `mab-selo-bike-30mm.svg` | 30 × 30 mm — selo redondo com ícone de bicicleta (roda+quadro em linha, `stroke-width:.6`, `stroke-linecap/linejoin:round`) acima de MAB + ATELIE3D. Ver "Referência de bicicleta" abaixo. |
 
 **Limitação conhecida e documentada:** as letras são `<text>` com
 `font-family="Caprasimo"`; a fonte **não está embutida**. Quem abrir sem a
@@ -226,6 +227,20 @@ Caprasimo instalada vê outra fonte. O fluxo correto (descrito em
 converter texto em caminho (Ctrl+Shift+C) antes de gravar. Se alguém for
 melhorar isso, o caminho é embutir a woff2 via `@font-face` dentro do SVG ou
 gerar os caminhos vetoriais definitivos uma única vez.
+
+**Referência de bicicleta (2026-09):** com o reposicionamento pra peças de
+bike, a marca ganhou um ícone — uma bicicleta de perfil desenhada só com
+linha (roda dianteira, roda traseira, quadro em triângulo, selim e guidão
+simplificados), sempre em `stroke-width:.6` com pontas e junções
+arredondadas (`stroke-linecap/linejoin:round`), a mesma espessura da borda
+do selo. **De propósito sem raios/detalhe fino na roda** — é a lição que já
+aprendemos gravando o logo da Saboaria Lindoya: traço fino demais derrete e
+mancha no diodo azul sobre PLA (ver decisão equivalente em
+`mab-solo-12mm-contorno.svg`, `stroke-width:0.3` mínimo documentado). O
+ícone fica só em `mab-selo-bike-30mm.svg` por enquanto; os lockups
+retangulares (`mab-lockup-*mm.svg`) continuam só tipográficos — se for
+usar o ícone fora do selo redondo, redesenhe o lockup em vez de espremer a
+bicicleta numa caixa 30×14.1mm pensada só pra texto.
 
 ### 4. Kit de Instagram (`Instagram — configuração inicial.dc.html`)
 
