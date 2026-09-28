@@ -158,9 +158,10 @@ com header, main flexível e footer colado embaixo.
         Fundo transparente, texto `accent-700`, borda 2px `accent-700`. Hover: fundo `accent-200`.
       - Foco: `outline: 2px solid accent-700; outline-offset: 3px`.
   - Coluna visual: painel `aspect-ratio: 4/3`, `border-radius:28px`, fundo
-    `accent-700`, sombra lg, com a marca centralizada em creme
-    ("MAB" `clamp(54px,9vw,96px)`). **Este painel é um placeholder** — quando
-    as fotos das peças existirem, substituir por foto de produto com o
+    `accent-700`, sombra lg, com o ícone de bicicleta (mesmo desenho do
+    `mab-selo-bike-30mm.svg`, em `stroke: creme`) acima da marca centralizada
+    em creme ("MAB" `clamp(54px,9vw,96px)`). **Este painel é um placeholder** —
+    quando as fotos das peças existirem, substituir por foto de produto com o
     tratamento `.washed` e `border-radius:28px`.
 - **"Nossa linha de trabalho"** — `margin-top: clamp(56px,9vw,104px)`;
   h2 + grid `repeat(auto-fit, minmax(240px,1fr))`, `gap:20px`. Três cartões:
